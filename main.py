@@ -45,7 +45,7 @@ t1_returns = df.eval('1+PctChange1').cumprod().rename(f'{ticker1} Returns')-1
 t2_returns = df.eval('1+PctChange2').cumprod().rename(f'{ticker2} Returns')-1
 returns_df = pd.concat([pair_returns,t1_returns,t2_returns],axis=1)
 
-fig1=px.line(returns_df,title=f'Pair (+{ticker1} -{ticker2})')
+fig1=px.line(returns_df,title=f'Cumulative Returns (+{ticker1} -{ticker2})')
 st.plotly_chart(fig1)
 
 if not fixed_weight:

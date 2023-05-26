@@ -5,9 +5,9 @@ import pandas as pd
 import plotly.express as px
 
 
-look_back = st.text_input('Look back (Days)', '180')
-ticker1 = st.text_input('Long Ticker', 'TSLA') # long
-ticker2 = st.text_input('Short Ticker', 'GM')  # short
+look_back = st.text_input('Look back (Days)', '90')
+ticker1 = st.text_input('Long Ticker', 'REZ') # long
+ticker2 = st.text_input('Short Ticker', 'NETL')  # short
 
 keep_cols = ['Date','Price','PctChange','PctVolatility']
 
